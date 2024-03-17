@@ -11,9 +11,9 @@ async def on_ready():
     
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
+    await ctx.send(af'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
 
 @bot.command()
-async def heh(ctx, count_heh = 5):
+async def heh(ctx, count_heh: int):
     await ctx.send("he" * count_heh)
 bot.run("token")
